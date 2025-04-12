@@ -6,6 +6,21 @@ export default function Page() {
     <div className="space-y-8">
       <h1 className="text-xl font-medium text-gray-300">Lingyi Zhou</h1>
 
+      <div className="space-y-5">
+        <div className="text-xs font-semibold uppercase tracking-wider text-gray-400">
+          About Me
+        </div>
+        <div className="rounded-lg bg-gray-900 px-5 py-3">
+          <p className="text-gray-300">
+            I am a passionate 3D artist and game designer with expertise in
+            various 3D software including Blender, Maya, Houdini, and Cinema 4D.
+            My work focuses on creating immersive experiences through 3D design
+            and interactive game development. I enjoy exploring the intersection
+            of art and technology, pushing creative boundaries in both visual
+            storytelling and interactive media.
+          </p>
+        </div>
+      </div>
       <div className="space-y-10 text-white">
         {demos.map((section) => {
           return (
