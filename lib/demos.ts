@@ -9,7 +9,7 @@ export const demos: { name: string; items: Item[] }[] = [
     name: 'Layouts',
     items: [
       {
-        name: 'Nested Layouts',
+        name: '3D Design',
         slug: 'layouts',
         description: 'Create UI that is shared across routes',
       },
