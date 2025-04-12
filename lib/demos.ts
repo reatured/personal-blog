@@ -13,6 +13,11 @@ export const demos: { name: string; items: Item[] }[] = [
         slug: '3DDesign',
         description: 'Explore my 3D design projects and creations',
       },
+      {
+        name: 'Software',
+        slug: '3DDesign/software',
+        description: 'My Blender 3D modeling and animation projects',
+      },
     ],
   },
   {
