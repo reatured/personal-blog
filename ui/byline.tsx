@@ -5,15 +5,17 @@ export default function Byline() {
     <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
       <div className="flex flex-col justify-between space-y-2 rounded-lg bg-black p-3.5 lg:px-5 lg:py-3">
         <div className="flex items-center gap-x-1.5">
-          <div className="text-sm text-gray-400">By</div>
-          <a href="https://vercel.com" title="Vercel">
+          <div className="text-sm text-gray-400">
+            By Lingyi Zhou <br></br> Apr 12th, 2025
+          </div>
+          {/* <a href="https://vercel.com" title="Vercel">
             <div className="w-16 text-gray-100 hover:text-gray-50">
               <VercelLogo />
             </div>
-          </a>
+          </a> */}
         </div>
 
-        <div className="text-sm text-gray-400">
+        {/* <div className="text-sm text-gray-400">
           <a
             className="underline decoration-dotted underline-offset-4 transition-colors hover:text-gray-300"
             href="https://github.com/vercel/app-playground"
@@ -31,7 +33,7 @@ export default function Byline() {
           >
             deploy your own
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
