@@ -20,15 +20,16 @@ export function GlobalNav() {
           className="group flex w-full items-center gap-x-2.5"
           onClick={close}
         >
-          <div className="h-7 w-7 rounded-full">
+          {/* <div className="h-7 w-7 rounded-full">
             <NextLogoDark />
-          </div>
+          </div> */}
 
-          <h3 className="font-semibold tracking-wide text-gray-400 group-hover:text-gray-50">
-            App Router
+          <h3 className="text-lg font-semibold tracking-wide text-gray-400 group-hover:text-gray-50">
+            Lingyi Zhou Portfolio
           </h3>
         </Link>
       </div>
+
       <button
         type="button"
         className="group absolute right-0 top-0 flex h-14 items-center gap-x-2 px-4 lg:hidden"
