@@ -6,16 +6,16 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Lingyi Zhou Personal Portfolio',
+    default: 'Next.js App Router',
     template: '%s | Next.js App Router',
   },
   metadataBase: new URL('https://app-router.vercel.app'),
   description:
-    'A portfolio of all the work that I have done and an update of what I am doing right now.',
+    'A playground to explore new Next.js App Router features such as nested layouts, instant loading states, streaming, and component level data fetching.',
   openGraph: {
-    title: 'Lingyi Zhou Personal Portfolio',
+    title: 'Next.js App Router Playground',
     description:
-      'A portfolio of all the work that I have done and an update of what I am doing right now.',
+      'A playground to explore new Next.js App Router features such as nested layouts, instant loading states, streaming, and component level data fetching.',
     images: [`/api/og?title=Next.js App Router`],
   },
   twitter: {

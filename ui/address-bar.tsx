@@ -56,14 +56,14 @@ export function AddressBar() {
       </div>
       <div className="flex gap-x-1 text-sm font-medium">
         <div>
-          <span className="px-2 text-gray-400">lingyizhou.com</span>
+          <span className="px-2 text-gray-400">acme.com</span>
         </div>
         {pathname ? (
           <>
             <span className="text-gray-600">/</span>
             {pathname
               .split('/')
-              .slice(1)
+              .slice(2)
               .map((segment) => {
                 return (
                   <React.Fragment key={segment}>

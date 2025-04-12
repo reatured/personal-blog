@@ -6,7 +6,7 @@ export type Item = {
 
 export const demos: { name: string; items: Item[] }[] = [
   {
-    name: '3D Design',
+    name: 'Layouts',
     items: [
       {
         name: 'Nested Layouts',
