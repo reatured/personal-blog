@@ -3,16 +3,13 @@ import { AddressBar } from '#/ui/address-bar';
 import Byline from '#/ui/byline';
 import { GlobalNav } from '#/ui/global-nav';
 import { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: {
     default: 'Lingyi Zhou Personal Portfolior',
     template: '%s | Next.js App Router',
   },
-  metadataBase: new URL(
-    'https://personal-blog-git-main-reatureds-projects.vercel.app/',
-  ),
+  metadataBase: new URL('https://app-router.vercel.app'),
   description:
     'A portfolio of all the work that I have done and an update of what I am doing right now.',
   openGraph: {
