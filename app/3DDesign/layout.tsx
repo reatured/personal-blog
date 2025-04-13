@@ -3,8 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { TabGroup } from '#/ui/tab-group';
-import { SoftwareCard, ProjectCard } from './page';
-import { Softwares } from '../../lib/Projects';
 
 const categories = [
   {
@@ -30,7 +28,6 @@ const categories = [
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  const softwares = Softwares;
   return (
     <div className="space-y-8">
       <div className="space-y-10 text-white">
@@ -45,10 +42,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               {
                 text: 'All',
               },
-
-              ...softwares.map((software) => ({
-                text: software.name,
-                slug: software.slug,
+              ...categories.map((category) => ({
+                text: category.name,
+                slug: category.slug,
               })),
             ]}
           />
