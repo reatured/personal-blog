@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Lingyi Zhou Personal Portfolior',
+    default: 'Lingyi Zhou Personal Portfolio',
     template: '%s | Next.js App Router',
   },
   metadataBase: new URL(
