@@ -40,20 +40,12 @@ function ProjectCard({
   );
 }
 
+// Define SoftwareCard component here or import it from another file
 const SoftwareCard = ({ software }: { software: any }) => {
   return (
-    <div className="space-y-2">
-      <h1 className="text-xl font-medium text-gray-300">{software.name}</h1>
-      <p className="text-sm text-gray-400">{software.description}</p>
-      <div className="grid grid-cols-1 gap-5 lg:grid-cols-4">
-        {software.projects.map((project: any) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            softwareSlug={software.slug}
-          />
-        ))}
-      </div>
+    <div className="rounded-lg border p-4">
+      <h2>{software.name}</h2>
+      <p>{software.description}</p>
     </div>
   );
 };
