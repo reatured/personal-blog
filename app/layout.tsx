@@ -3,7 +3,6 @@ import { AddressBar } from '#/ui/address-bar';
 import Byline from '#/ui/byline';
 import { GlobalNav } from '#/ui/global-nav';
 import { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: {
