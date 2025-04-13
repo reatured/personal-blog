@@ -3,13 +3,16 @@ import { AddressBar } from '#/ui/address-bar';
 import Byline from '#/ui/byline';
 import { GlobalNav } from '#/ui/global-nav';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: {
     default: 'Lingyi Zhou Personal Portfolior',
     template: '%s | Next.js App Router',
   },
-  metadataBase: new URL('https://app-router.vercel.app'),
+  metadataBase: new URL(
+    'https://personal-blog-git-main-reatureds-projects.vercel.app/',
+  ),
   description:
     'A portfolio of all the work that I have done and an update of what I am doing right now.',
   openGraph: {
@@ -35,12 +38,6 @@ export default function RootLayout({
 
         <div className="lg:pl-72">
           <div className="mx-auto max-w-4xl space-y-8 px-2 pt-20 lg:px-8 lg:py-8">
-            <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black">
-                <AddressBar />
-              </div>
-            </div>
-
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
               <div className="rounded-lg bg-black p-3.5 lg:p-6">{children}</div>
             </div>
