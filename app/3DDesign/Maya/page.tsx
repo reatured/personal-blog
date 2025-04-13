@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectCard } from '../../components/ProjectCards';
+import { ProjectCard, SoftwareCard } from '../page';
 import { Softwares } from '../../../lib/Projects';
 
 export default function Page() {
