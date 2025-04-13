@@ -4,15 +4,16 @@ export type Item = {
   description?: string;
 };
 
-export const demos: { name: string; items: Item[] }[] = [
+export const demos: { name: string; slug: string; items: Item[] }[] = [
   {
     name: '3D Design',
+    slug: '3DDesign',
     items: [
-      {
-        name: '3D Design',
-        slug: '3DDesign',
-        description: 'Explore my 3D design projects and creations',
-      },
+      // {
+      //   name: '3D Design',
+      //   slug: '3DDesign',
+      //   description: 'Explore my 3D design projects and creations',
+      // },
       {
         name: 'Blender',
         slug: '3DDesign/Blender',
@@ -37,12 +38,13 @@ export const demos: { name: string; items: Item[] }[] = [
   },
   {
     name: 'Game Design',
+    slug: 'GameDesign',
     items: [
-      {
-        name: 'Game Design',
-        slug: 'GameDesign',
-        description: 'Explore my game design projects and prototypes',
-      },
+      // {
+      //   name: 'Game Design',
+      //   slug: 'GameDesign',
+      //   description: 'Explore my game design projects and prototypes',
+      // },
       {
         name: 'Just Another Day',
         slug: 'GameDesign/JustAnotherDay',
@@ -57,12 +59,13 @@ export const demos: { name: string; items: Item[] }[] = [
   },
   {
     name: '2D Design',
+    slug: '2DDesign',
     items: [
-      {
-        name: '2D Design',
-        slug: '2DDesign',
-        description: 'Explore my 2D design and illustration projects',
-      },
+      // {
+      //   name: '2D Design',
+      //   slug: '2DDesign',
+      //   description: 'Explore my 2D design and illustration projects',
+      // },
       {
         name: 'Catalogue Design',
         slug: '2DDesign/Catalogue',
@@ -77,16 +80,18 @@ export const demos: { name: string; items: Item[] }[] = [
   },
   {
     name: 'Application Development',
+    slug: 'AppDev',
     items: [
-      {
-        name: 'Application Development',
-        slug: 'AppDev',
-        description: 'Explore my application development projects',
-      },
+      // {
+      //   name: 'Application Development',
+      //   slug: 'AppDev',
+      //   description: 'Explore my application development projects',
+      // },
     ],
   },
   // {
   //   name: 'Layouts',
+  //   slug: 'Layouts',
   //   items: [
   //     {
   //       name: '3D Design',
@@ -107,6 +112,7 @@ export const demos: { name: string; items: Item[] }[] = [
   // },
   // {
   //   name: 'File Conventions',
+  //   slug: 'FileConventions',
   //   items: [
   //     {
   //       name: 'Loading',
@@ -128,6 +134,7 @@ export const demos: { name: string; items: Item[] }[] = [
   // },
   // {
   //   name: 'Data Fetching',
+  //   slug: 'DataFetching',
   //   items: [
   //     {
   //       name: 'Streaming with Suspense',
@@ -154,6 +161,7 @@ export const demos: { name: string; items: Item[] }[] = [
   // },
   // {
   //   name: 'Components',
+  //   slug: 'Components',
   //   items: [
   //     {
   //       name: 'Client Context',
@@ -165,6 +173,7 @@ export const demos: { name: string; items: Item[] }[] = [
   // },
   // {
   //   name: 'Misc',
+  //   slug: 'Misc',
   //   items: [
   //     {
   //       name: 'Patterns',

@@ -1,5 +1,4 @@
 import '#/styles/globals.css';
-import { AddressBar } from '#/ui/address-bar';
 import Byline from '#/ui/byline';
 import { GlobalNav } from '#/ui/global-nav';
 import { Metadata } from 'next';
@@ -7,7 +6,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: {
     default: 'Lingyi Zhou Personal Portfolio',
-    template: '%s | Next.js App Router',
+    template: '%s | Lingyi Zhou',
   },
   metadataBase: new URL(
     'https://personal-blog-git-main-reatureds-projects.vercel.app/',
