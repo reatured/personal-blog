@@ -40,22 +40,39 @@ function ProjectCard({
   );
 }
 
-// Define SoftwareCard component here or import it from another file
-const SoftwareCard = ({ software }: { software: any }) => {
+function SoftwareCard({
+  software,
+}: {
+  software: {
+    name: string;
+    description: string;
+    projects: any[];
+    slug: string;
+  };
+}) {
   return (
-    <div className="rounded-lg border p-4">
-      <h2>{software.name}</h2>
-      <p>{software.description}</p>
+    <div className="space-y-2">
+      <h1 className="text-xl font-medium text-gray-300">{software.name}</h1>
+      <p className="text-sm text-gray-400">{software.description}</p>
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-4">
+        {software.projects.map((project: any) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            softwareSlug={software.slug}
+          />
+        ))}
+      </div>
     </div>
   );
-};
+}
 
 export default function Page() {
   const softwares = Softwares;
   return (
     <div className="space-y-16">
       {softwares.map((software) => {
-        return <SoftwareCard key={software.slug} software={software} />;
+        return <SoftwareCard key={software.name} software={software} />;
       })}
     </div>
   );
