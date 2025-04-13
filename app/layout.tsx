@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: {
     default: 'Lingyi Zhou Personal Portfolio',
-    template: '%s | Lingyi Zhou',
+    template: '%s | Next.js App Router',
   },
   metadataBase: new URL(
     'https://personal-blog-git-main-reatureds-projects.vercel.app/',
