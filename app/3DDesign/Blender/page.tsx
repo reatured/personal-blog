@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -11,35 +12,43 @@ export default function Page() {
           </div>
           <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
             {/* Project 1 */}
-            <div className="group relative rounded-lg border border-gray-800 bg-gray-900 p-4">
+            <Link
+              href="/3DDesign/Blender/project1"
+              className="group relative rounded-lg border border-gray-800 bg-gray-900 p-4"
+            >
               <div className="relative aspect-square w-full overflow-hidden rounded-lg">
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/1646525087584-R170PYIBR5ZM4ETLW1GA/Cologne5.jpeg?format=1000w"
-                  alt="Blender Project 1"
+                  alt="Modelling with Google Map Data"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="mt-4">
-                <h3 className="text-lg font-medium text-gray-200">Project 1</h3>
+                <h3 className="text-lg font-medium text-gray-200">
+                  Modelling with Google Map Data
+                </h3>
                 <p className="mt-1 text-sm text-gray-400">
-                  Description of the first project
+                  Large scale wall poster designed by combining two different
+                  google map datasets.
                 </p>
               </div>
-            </div>
+            </Link>
 
             {/* Project 2 */}
             <div className="group relative rounded-lg border border-gray-800 bg-gray-900 p-4">
               <div className="relative aspect-square w-full overflow-hidden rounded-lg">
                 <img
                   src="https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/1616029881555-0U2KGLSOEM1ONKQB6X2E/CH243+Pic6.jpg?content-type=image%2Fjpeg"
-                  alt="Blender Project 2"
+                  alt="Coat Hook Model"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="mt-4">
-                <h3 className="text-lg font-medium text-gray-200">Project 2</h3>
+                <h3 className="text-lg font-medium text-gray-200">
+                  Modelling for Product Design
+                </h3>
                 <p className="mt-1 text-sm text-gray-400">
-                  Description of the second project
+                  Industrial design with customized home decoration hardwares.
                 </p>
               </div>
             </div>
@@ -54,9 +63,12 @@ export default function Page() {
                 />
               </div>
               <div className="mt-4">
-                <h3 className="text-lg font-medium text-gray-200">Project 3</h3>
+                <h3 className="text-lg font-medium text-gray-200">
+                  Teddy Bear
+                </h3>
                 <p className="mt-1 text-sm text-gray-400">
-                  Description of the third project
+                  Hair modelling with particle system based on real teddy bear
+                  toy
                 </p>
               </div>
             </div>
@@ -71,9 +83,11 @@ export default function Page() {
                 />
               </div>
               <div className="mt-4">
-                <h3 className="text-lg font-medium text-gray-200">Project 4</h3>
+                <h3 className="text-lg font-medium text-gray-200">
+                  Modelling for Customized Hardware
+                </h3>
                 <p className="mt-1 text-sm text-gray-400">
-                  Description of the fourth project
+                  Industrial design with customized home decoration hardwares.
                 </p>
               </div>
             </div>
