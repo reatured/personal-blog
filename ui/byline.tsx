@@ -6,7 +6,7 @@ export default function Byline() {
       <div className="flex flex-col justify-between space-y-2 rounded-lg bg-black p-3.5 lg:px-5 lg:py-3">
         <div className="flex items-center gap-x-1.5">
           <div className="text-sm text-gray-400">
-            By Lingyi Zhou <br></br> Apr 12th, 2025
+            By Lingyi Zhou <br></br> Apr 14th, 2025
           </div>
           {/* <a href="https://vercel.com" title="Vercel">
             <div className="w-16 text-gray-100 hover:text-gray-50">

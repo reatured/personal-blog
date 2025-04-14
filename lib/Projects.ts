@@ -81,8 +81,8 @@ export const Softwares: {
       {
         id: 6,
         slug: 'project6',
-        name: 'Procedural Modelling',
-        description: 'Procedural modelling using graph nodes in Blender',
+        name: 'Bowling Scene',
+        description: 'Modelled and rendered a bowling scene in Blender',
         imageUrl:
           'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/1581452484247-CNUOZA0EX4P4CNGDUDKN/3.1+Bowling+Scene.png?format=750w',
         software: 'Blender',

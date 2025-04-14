@@ -39,20 +39,27 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {currentSoftware && currentSoftwareData && (
         <div className="space-y-5 text-white">
           <div className="block md:hidden">
-            <TabGroup
-              path={`/3DDesign/${currentSoftware}`}
-              items={[
-                {
-                  text: 'All',
-                },
-                ...(currentSoftwareData.projects?.map(
-                  (project: { name: string; slug: string }) => ({
-                    text: project.name,
-                    slug: project.slug,
-                  }),
-                ) || []),
-              ]}
-            />
+            {pathSegments.length > 3 ? (
+              <TabGroup
+                path={`/3DDesign/${currentSoftware}`}
+                items={[
+                  {
+                    text: 'All',
+                  },
+                  ...(currentSoftwareData.projects?.map(
+                    (project: { name: string; slug: string }) => ({
+                      text: project.name,
+                      slug: project.slug,
+                    }),
+                  ) || []),
+                ]}
+              />
+            ) : (
+              <SoftwareCard
+                key={currentSoftwareData.name}
+                software={currentSoftwareData}
+              />
+            )}
           </div>
           <div className="hidden md:block">
             <SoftwareCard
