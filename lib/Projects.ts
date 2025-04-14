@@ -59,11 +59,32 @@ export const Softwares: {
       {
         id: 4,
         slug: 'project4',
-        name: 'Customized Hardware',
-        description:
-          'Industrial design with customized home decoration hardwares.',
+        name: 'Procedural Modelling',
+        description: 'Procedural modelling using graph nodes in Blender',
         imageUrl:
-          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/9b7c6dd4-3676-4fc1-8834-21296877e85e/%E6%94%AF%E6%9E%B6%E6%B8%B2%E6%9F%93%E5%9B%BE4.png?content-type=image%2Fpng',
+          'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/7ab94758-9d5a-4a27-ba56-ec09d5d1a733/rendered1.png?format=750w',
+        software: 'Blender',
+        imageRatio: 'square',
+        highlight: false,
+      },
+      {
+        id: 5,
+        slug: 'project5',
+        name: 'Chess Pieces Used in Virtual Reality',
+        description: 'Implementation of chess pieces in Unity',
+        imageUrl:
+          'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/1578119718134-7RJ2ZYJRJLY8FE7EIC7O/Chess+Scene+Finished+View2+20-01-04.png?format=2500w',
+        software: 'Blender',
+        imageRatio: 'square',
+        highlight: false,
+      },
+      {
+        id: 6,
+        slug: 'project6',
+        name: 'Procedural Modelling',
+        description: 'Procedural modelling using graph nodes in Blender',
+        imageUrl:
+          'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/1581452484247-CNUOZA0EX4P4CNGDUDKN/3.1+Bowling+Scene.png?format=750w',
         software: 'Blender',
         imageRatio: 'square',
         highlight: false,
@@ -107,10 +128,21 @@ export const Softwares: {
       {
         id: 1,
         slug: 'houdini-project-1',
-        name: 'Houdini Project 1',
-        description: 'Description of the first project',
+        name: 'Fluid Simulation',
+        description: 'Fluid simulation animation',
         imageUrl:
           'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/086317e7-514d-4abe-b8ce-277a0d48dd33/QQ%E6%88%AA%E5%9B%BE20220104202214.png?content-type=image%2Fpng',
+        software: 'Houdini',
+        imageRatio: 'square',
+        highlight: false,
+      },
+      {
+        id: 2,
+        slug: 'houdini-project-2',
+        name: 'Donut',
+        description: 'Procedural modelling, rendered with motion blur',
+        imageUrl:
+          'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/648a2ce7-1b35-4092-8906-b092872d9704/DonutRender..jpg?format=750w',
         software: 'Houdini',
         imageRatio: 'square',
         highlight: false,
@@ -136,7 +168,7 @@ export const Softwares: {
       {
         id: 2,
         slug: 'slow-motion-animation',
-        name: 'Slow Motion Animation',
+        name: 'Action Scene',
         description:
           'A dramatic slow-motion scene featuring a girl skillfully dodging a bullet.',
         imageUrl:
@@ -155,10 +187,10 @@ export const Softwares: {
       {
         id: 1,
         slug: 'project1',
-        name: 'Project 1',
-        description: 'Description of the first project',
+        name: 'Product Model',
+        description: 'Shelf Bracket Modelling to Product Production',
         imageUrl:
-          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/1630450019654-9M9R9FB3ZX2HT422LH0W/Glass+Clip2.png?content-type=image%2Fpng',
+          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/9b7c6dd4-3676-4fc1-8834-21296877e85e/%E6%94%AF%E6%9E%B6%E6%B8%B2%E6%9F%93%E5%9B%BE4.png?content-type=image%2Fpng',
         software: 'Fusion 360',
         imageRatio: 'square',
         highlight: false,
