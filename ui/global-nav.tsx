@@ -1,6 +1,26 @@
+/**
+ * Global Navigation Component
+ *
+ * This component provides the main navigation for the portfolio website.
+ * It features a responsive sidebar that collapses into a mobile menu on smaller screens.
+ *
+ * Features:
+ * - Responsive design with mobile menu toggle
+ * - Active state highlighting for current route
+ * - Collapsible sidebar on desktop
+ * - Mobile-friendly hamburger menu
+ *
+ * @component
+ */
+
 'use client';
 
-import { demos, type Item } from '#/lib/demos';
+import {
+  Categories,
+  type Category,
+  type SubCategory,
+  type Project,
+} from '#/lib/project';
 import { NextLogoDark } from '#/ui/next-logo';
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
@@ -8,28 +28,31 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import clsx from 'clsx';
 import { useState } from 'react';
 
+/**
+ * Main Global Navigation Component
+ *
+ * @returns {JSX.Element} The global navigation sidebar
+ */
 export function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false);
   const close = () => setIsOpen(false);
 
   return (
     <div className="fixed top-0 z-10 flex w-full flex-col border-b border-gray-800 bg-black lg:bottom-0 lg:z-auto lg:w-72 lg:border-b-0 lg:border-r lg:border-gray-800">
+      {/* Logo/Brand Section */}
       <div className="flex h-14 items-center px-4 py-4 lg:h-auto">
         <Link
           href="/"
           className="group flex w-full items-center gap-x-2.5"
           onClick={close}
         >
-          {/* <div className="h-7 w-7 rounded-full">
-            <NextLogoDark />
-          </div> */}
-
           <h3 className="text-lg font-semibold tracking-wide text-gray-400 group-hover:text-gray-50">
             Lingyi Zhou Portfolio
           </h3>
         </Link>
       </div>
 
+      {/* Mobile Menu Toggle Button */}
       <button
         type="button"
         className="group absolute right-0 top-0 flex h-14 items-center gap-x-2 px-4 lg:hidden"
@@ -45,6 +68,7 @@ export function GlobalNav() {
         )}
       </button>
 
+      {/* Navigation Menu */}
       <div
         className={clsx('overflow-y-auto lg:static lg:block', {
           'fixed inset-x-0 bottom-0 top-14 mt-px bg-black': isOpen,
@@ -52,40 +76,57 @@ export function GlobalNav() {
         })}
       >
         <nav className="space-y-6 px-2 pb-24 pt-5">
-          {demos.map((section) => {
-            return (
-              <div key={section.name}>
-                {/* <div className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-400/80">
-                  <div>{section.name}</div>
-                </div> */}
+          {Categories.map((category) => (
+            <div key={category.slug}>
+              {/* Category Title */}
+              <GlobalNavItem
+                item={{
+                  name: category.name,
+                  slug: category.slug,
+                }}
+                close={close}
+                isTitle={true}
+              />
 
-                <GlobalNavItem
-                  key={section.slug}
-                  item={section}
-                  close={close}
-                  isTitle={true}
-                />
-
-                <div className="space-y-1">
-                  {section.items.map((item) => (
-                    <GlobalNavItem key={item.slug} item={item} close={close} />
-                  ))}
-                </div>
+              {/* Sub-categories */}
+              <div className="space-y-1">
+                {category.subCategories.map((subCategory) => (
+                  <div key={subCategory.slug}>
+                    {/* Sub-category Title */}
+                    <GlobalNavItem
+                      item={{
+                        name: subCategory.name,
+                        slug: `${category.slug}/${subCategory.slug}`,
+                      }}
+                      close={close}
+                      isTitle={false}
+                    />
+                  </div>
+                ))}
               </div>
-            );
-          })}
+            </div>
+          ))}
         </nav>
       </div>
     </div>
   );
 }
 
+/**
+ * Individual Navigation Item Component
+ *
+ * @param {Object} props - Component props
+ * @param {Item} props.item - Navigation item data
+ * @param {Function} props.close - Function to close mobile menu
+ * @param {boolean} [props.isTitle=false] - Whether this is a section title
+ * @returns {JSX.Element} A navigation link with appropriate styling
+ */
 function GlobalNavItem({
   item,
   close,
   isTitle = false,
 }: {
-  item: Item;
+  item: { name: string; slug: string };
   close: () => false | void;
   isTitle?: boolean;
 }) {
@@ -103,7 +144,6 @@ function GlobalNavItem({
               {
                 'text-gray-400 hover:bg-gray-800': !isActive,
                 'text-white': isActive,
-                // 'text-xl uppercase text-gray-200': isTitle,
               },
             )
           : clsx(

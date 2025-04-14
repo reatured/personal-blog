@@ -197,4 +197,22 @@ export const Softwares: {
       },
     ],
   },
+  {
+    name: 'Latest',
+    slug: 'latest',
+    description: 'Latest Projects Updates',
+    projects: [
+      {
+        id: 1,
+        slug: 'project1',
+        name: 'Product Model',
+        description: 'Shelf Bracket Modelling to Product Production',
+        imageUrl:
+          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/9b7c6dd4-3676-4fc1-8834-21296877e85e/%E6%94%AF%E6%9E%B6%E6%B8%B2%E6%9F%93%E5%9B%BE4.png?content-type=image%2Fpng',
+        software: 'Fusion 360',
+        imageRatio: 'square',
+        highlight: false,
+      },
+    ],
+  },
 ];

@@ -1,8 +1,12 @@
 import { demos } from '#/lib/demos';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import { Softwares } from '#/lib/Projects';
+import { SoftwareCard, ProjectCard } from './components/softwareSection';
 export default function Page() {
+  const latestProjects = Softwares.find(
+    (software) => software.name === 'Latest',
+  );
   return (
     <div className="space-y-8">
       <h1 className="text-xl font-medium text-gray-300">Lingyi Zhou</h1>
@@ -57,6 +61,12 @@ export default function Page() {
         </ul>
       </div>
       <div className="space-y-10 text-white">
+        <div className="text-xs font-semibold uppercase tracking-wider text-gray-400">
+          Latest Update
+        </div>
+
+        {latestProjects && <SoftwareCard software={latestProjects} />}
+
         {demos.map((section) => (
           <div key={section.name} className="space-y-5">
             <div className="text-xs font-semibold uppercase tracking-wider text-gray-400">
