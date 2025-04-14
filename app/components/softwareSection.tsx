@@ -63,7 +63,7 @@ export function ProjectCard({
 
 export const SoftwareCard = ({ software }: { software: Software }) => {
   return (
-    <div className="space-y-2">
+    <div className="space-y-1">
       <h1 className="text-xl font-medium text-gray-300">{software.name}</h1>
       <p className="text-sm text-gray-400">{software.description}</p>
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-4">

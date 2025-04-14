@@ -148,4 +148,22 @@ export const Softwares: {
       },
     ],
   },
+  {
+    name: 'Fusion 360',
+    slug: 'Fusion360',
+    description: '3D design and engineering projects created with Fusion 360',
+    projects: [
+      {
+        id: 1,
+        slug: 'project1',
+        name: 'Project 1',
+        description: 'Description of the first project',
+        imageUrl:
+          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/1630450019654-9M9R9FB3ZX2HT422LH0W/Glass+Clip2.png?content-type=image%2Fpng',
+        software: 'Fusion 360',
+        imageRatio: 'square',
+        highlight: false,
+      },
+    ],
+  },
 ];
