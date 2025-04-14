@@ -36,11 +36,10 @@ export const Softwares: {
       {
         id: 2,
         slug: 'project2',
-        name: 'Modelling for Product Design',
-        description:
-          'Industrial design with customized home decoration hardwares.',
+        name: 'Cartoon Shader',
+        description: 'Modelling and Coloring with Toon Shader in Blender',
         imageUrl:
-          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/1616029881555-0U2KGLSOEM1ONKQB6X2E/CH243+Pic6.jpg?content-type=image%2Fjpeg',
+          'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/a0fc2f8f-c051-45b2-be66-1af75ae39598/Wnad+Demo+GIF.gif?format=2500w',
         software: 'Blender',
         imageRatio: 'square',
         highlight: false,

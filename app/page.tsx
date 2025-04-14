@@ -19,6 +19,8 @@ export default function Page() {
             of art and technology, pushing creative boundaries in both visual
             storytelling and interactive media.
           </p>
+
+          <p className="text-gray-300"></p>
         </div>
       </div>
       <div className="space-y-10 text-white">
