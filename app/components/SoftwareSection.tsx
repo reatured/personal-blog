@@ -1,8 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
-import { Project as ProjectType } from '../../lib/projects';
 
-interface Project extends ProjectType {}
+interface Project {
+  id: string;
+  name: string;
+  slug: string;
+  description: string;
+  imageUrl: string;
+  imageRatio: 'square' | 'landscape' | 'portrait';
+}
+
+interface Software {
+  name: string;
+  slug: string;
+  description: string;
+  projects: Project[];
+}
 
 function truncateDescription(description: string, maxWords: number) {
   const words = description.split(' ');
