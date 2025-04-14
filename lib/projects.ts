@@ -36,11 +36,10 @@ export const Softwares: {
       {
         id: 2,
         slug: 'project2',
-        name: 'Modelling for Product Design',
-        description:
-          'Industrial design with customized home decoration hardwares.',
+        name: 'Cartoon Shader',
+        description: 'Modelling objects and coloring them with cartoon shader.',
         imageUrl:
-          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/1616029881555-0U2KGLSOEM1ONKQB6X2E/CH243+Pic6.jpg?content-type=image%2Fjpeg',
+          'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/a0fc2f8f-c051-45b2-be66-1af75ae39598/Wnad+Demo+GIF.gif?format=750w',
         software: 'Blender',
         imageRatio: 'square',
         highlight: false,
@@ -143,6 +142,24 @@ export const Softwares: {
         imageUrl:
           'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/5fb32f43-fb18-4d4b-b882-3f0309a8cf87/Project+View.jpg?content-type=image%2Fjpeg',
         software: 'Cinema 4D',
+        imageRatio: 'square',
+        highlight: false,
+      },
+    ],
+  },
+  {
+    name: 'Fusion 360',
+    slug: 'Fusion360',
+    description: '3D design and engineering projects created with Fusion 360',
+    projects: [
+      {
+        id: 1,
+        slug: 'fusion360-project-1',
+        name: 'Fusion 360 Project 1',
+        description: 'Description of the first project',
+        imageUrl:
+          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/086317e7-514d-4abe-b8ce-277a0d48dd33/QQ%E6%88%AA%E5%9B%BE20220104202214.png?content-type=image%2Fpng',
+        software: 'Fusion 360',
         imageRatio: 'square',
         highlight: false,
       },
