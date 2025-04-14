@@ -4,12 +4,11 @@ export default function Project2Page() {
       <div className="space-y-3">
         <h1 className="text-2xl font-medium text-gray-200">Cartoon Shader</h1>
         <div className="text-gray-400">
-          <p>Modelling and Coloring with Toon Shader in Blender</p>
+          <p>Modelling and Coloring with customized shader in Blender</p>
         </div>
       </div>
 
       <div className="space-y-4">
-        <h2 className="text-xl font-medium text-gray-300">Project Details</h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <div className="group relative rounded-lg border border-gray-800 bg-gray-900 p-4">
             <div className="relative aspect-video w-full overflow-hidden rounded-lg">
@@ -21,10 +20,10 @@ export default function Project2Page() {
             </div>
             <div className="mt-4">
               <h3 className="text-lg font-medium text-gray-200">
-                Cartoon Shader Project
+                Magic Wand Gif
               </h3>
               <p className="mt-1 text-sm text-gray-400">
-                Modelling and Coloring with Toon Shader in Blender
+                Modelling and Coloring with customized Shader in Blender
               </p>
             </div>
           </div>
@@ -40,9 +39,11 @@ export default function Project2Page() {
               />
             </div>
             <div className="mt-4">
-              <h3 className="text-lg font-medium text-gray-200">Vimeo Video</h3>
+              <h3 className="text-lg font-medium text-gray-200">
+                Magic Wand High Res Video
+              </h3>
               <p className="mt-1 text-sm text-gray-400">
-                Video showcasing the project details
+                Video rendered from Blender
               </p>
             </div>
           </div>
@@ -76,10 +77,10 @@ export default function Project2Page() {
             </div>
             <div className="mt-4">
               <h3 className="text-lg font-medium text-gray-200">
-                Vimeo Video 2
+                Cake High Res Video
               </h3>
               <p className="mt-1 text-sm text-gray-400">
-                Another video showcasing the project's details
+                High resolution video rendered from Blender
               </p>
             </div>
           </div>

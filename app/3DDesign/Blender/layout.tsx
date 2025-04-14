@@ -11,7 +11,7 @@ const projects = [
     description: 'Description for Project 1 goes here',
   },
   {
-    name: 'Coat Hook',
+    name: 'Magic Wand',
     slug: 'project2',
     description: 'Description for Project 2 goes here',
   },

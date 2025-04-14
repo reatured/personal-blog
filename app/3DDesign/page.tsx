@@ -6,7 +6,7 @@ export default function Page() {
   const softwares = Softwares;
   return (
     <div className="space-y-5">
-      {Softwares.map((software) => (
+      {softwares.map((software) => (
         <SoftwareCard key={software.slug} software={software} />
       ))}
     </div>
