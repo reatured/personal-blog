@@ -16,7 +16,6 @@ export default async function Page(props: {
         {Array.from({ length: category.count }).map((_, i) => (
           <SkeletonCard key={i} />
         ))}
-        {/* <SkeletonCard key={category.count + 1} /> */}
       </div>
     </div>
   );
