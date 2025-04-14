@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 interface Project {
-  id: string;
+  id: number;
   name: string;
   slug: string;
   description: string;

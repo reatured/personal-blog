@@ -1,6 +1,6 @@
 import React from 'react';
-import { SoftwareCard } from '../components/SoftwareSection';
-import { Softwares } from '../../lib/projects';
+import { SoftwareCard } from '../components/softwareSection';
+import { Softwares } from '../../lib/Projects';
 
 export default function Page() {
   const softwares = Softwares;
