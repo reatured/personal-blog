@@ -1,11 +1,12 @@
 import { demos } from '#/lib/demos';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Categories } from '#/lib/project';
-
+import { Softwares } from '#/lib/Projects';
+import { SoftwareCard, ProjectCard } from './components/softwareSection';
 export default function Page() {
-  const latestCategory = Categories.find((category) => category.slug === 'latest');
-  
+  const latestProjects = Softwares.find(
+    (software) => software.name === 'Latest',
+  );
   return (
     <div className="space-y-8">
       <h1 className="text-xl font-medium text-gray-300">Lingyi Zhou</h1>
@@ -59,71 +60,12 @@ export default function Page() {
           </li>
         </ul>
       </div>
-      
       <div className="space-y-10 text-white">
         <div className="text-xs font-semibold uppercase tracking-wider text-gray-400">
-          Portfolio Categories
-        </div>
-        
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {Categories.filter(category => category.name !== 'Latest').map((category) => (
-            <Link
-              href={`/${category.slug}`}
-              key={category.slug}
-              className="group overflow-hidden rounded-lg bg-gray-800 transition hover:bg-gray-700"
-            >
-              <div className="relative h-48 w-full">
-                <Image
-                  src={category.imageUrl}
-                  alt={category.name}
-                  fill
-                  className={`object-cover transition duration-300 group-hover:scale-105 ${
-                    category.imageRatio === 'portrait' ? 'object-top' : 'object-center'
-                  }`}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="font-medium text-gray-200 group-hover:text-white">
-                  {category.name}
-                </h3>
-                <p className="mt-1 text-sm text-gray-400">{category.description}</p>
-              </div>
-            </Link>
-          ))}
+          Latest Update
         </div>
 
-        {latestCategory && latestCategory.subCategories.length > 0 && (
-          <div className="space-y-5">
-            <div className="text-xs font-semibold uppercase tracking-wider text-gray-400">
-              Latest Projects
-            </div>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {latestCategory.subCategories[0].projects.map((project) => (
-                <div key={project.id} className="overflow-hidden rounded-lg bg-gray-800">
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src={project.imageUrl}
-                      alt={project.name}
-                      fill
-                      className={`object-cover ${
-                        project.imageRatio === 'portrait' ? 'object-top' : 'object-center'
-                      }`}
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-medium text-gray-200">{project.name}</h3>
-                    <p className="mt-1 text-sm text-gray-400">{project.description}</p>
-                    {project.software && (
-                      <span className="mt-2 inline-block rounded-full bg-gray-700 px-2 py-1 text-xs text-gray-300">
-                        {project.software}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+        {latestProjects && <SoftwareCard software={latestProjects} />}
 
         {demos.map((section) => (
           <div key={section.name} className="space-y-5">
