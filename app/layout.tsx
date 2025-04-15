@@ -2,6 +2,7 @@ import '#/styles/globals.css';
 import Byline from '#/ui/byline';
 import { GlobalNav } from '#/ui/global-nav';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: {
@@ -42,6 +43,7 @@ export default function RootLayout({
             <Byline />
           </div>
         </div>
+        <Analytics />
       </body>
     </html>
   );
