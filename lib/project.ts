@@ -36,7 +36,7 @@ export type Category = {
 export const Categories: Category[] = [
   {
     name: '3D Design',
-    slug: '3DDesign',
+    slug: '3DDesign2',
     description: '3D Design and Modeling Projects',
     imageUrl:
       'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/1590811603300-7CGFL48UXIG9EZ9P52EC/Bear+Image+6.png?format=1500w',
@@ -125,7 +125,7 @@ export const Categories: Category[] = [
         slug: 'Maya',
         description: '3D projects created with Autodesk Maya',
         imageUrl:
-          'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/1616029865192-RB2DYMLFP61LAXMNK5BE/CH243+Pic7.jpg?format=750w',
+          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/1909711d-87a8-4ae4-91f7-2d5a9baeef8b/Canon+Animation.gif?content-type=image%2Fgif',
         imageRatio: 'square',
         projects: [
           {
@@ -157,7 +157,7 @@ export const Categories: Category[] = [
         slug: 'Houdini',
         description: 'Procedural 3D and VFX projects created with Houdini',
         imageUrl:
-          'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/1590811603300-7CGFL48UXIG9EZ9P52EC/Bear+Image+6.png?format=1500w',
+          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/086317e7-514d-4abe-b8ce-277a0d48dd33/QQ%E6%88%AA%E5%9B%BE20220104202214.png?content-type=image%2Fpng',
         imageRatio: 'landscape',
         projects: [
           {
@@ -189,7 +189,7 @@ export const Categories: Category[] = [
         slug: 'Cinema4D',
         description: 'Motion graphics and 3D projects created with Cinema 4D',
         imageUrl:
-          'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/1590811603300-7CGFL48UXIG9EZ9P52EC/Bear+Image+6.png?format=1500w',
+          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/a5737306-9478-4ae4-b173-2482e58da178/+5600_SP23_Loop_15_Lingyi_Zhou+2.gif?content-type=image%2Fgif',
         imageRatio: 'landscape',
         projects: [
           {
@@ -223,7 +223,7 @@ export const Categories: Category[] = [
         description:
           '3D design and engineering projects created with Fusion 360',
         imageUrl:
-          'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/1590811603300-7CGFL48UXIG9EZ9P52EC/Bear+Image+6.png?format=1500w',
+          'https://images.squarespace-cdn.com/content/5df7337598a1771a4a73ef26/9b7c6dd4-3676-4fc1-8834-21296877e85e/%E6%94%AF%E6%9E%B6%E6%B8%B2%E6%9F%93%E5%9B%BE4.png?content-type=image%2Fpng',
         imageRatio: 'landscape',
         projects: [
           {
@@ -327,5 +327,14 @@ export const Categories: Category[] = [
         ],
       },
     ],
+  },
+  {
+    name: 'About',
+    slug: 'about',
+    description: 'About Me',
+    imageUrl:
+      'https://images.squarespace-cdn.com/content/v1/5df7337598a1771a4a73ef26/1590811603300-7CGFL48UXIG9EZ9P52EC/Bear+Image+6.png?format=1500w',
+    imageRatio: 'landscape',
+    subCategories: [],
   },
 ];
